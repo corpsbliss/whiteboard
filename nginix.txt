@@ -1,0 +1,8 @@
+sudo apt update
+sudo apt install apache2 php -y
+sudo systemctl start apache2
+sudo systemctl enable apache2
+
+cd /var/www/html
+sudo curl -O https://raw.githubusercontent.com/Athlon1600/php-proxy-app/master/index.php
+sudo chmod 644 index.php
